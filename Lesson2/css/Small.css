@@ -1,14 +1,13 @@
 /* Lesson 2 CSS-phone view */
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@media screen and (min-width: 20em) {
 
 main {
-
-    margin: 0 auto;
     display: grid;
+    margin: 0 auto;
     grid-template-columns: 1fr;
     column-gap: 15px;
-
+    
 }
 
 body {
@@ -29,6 +28,9 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
+h3{
+    background-color: seagreen;
+}
 
 body,
 header,
@@ -47,7 +49,6 @@ body {
 
 header,
 footer {
-    grid-template-columns: 1fr;
     background-color: seagreen;
     color: black;
     text-align: center;
@@ -64,6 +65,7 @@ footer {
     padding: 1em;
     text-align: center;
     box-shadow: 4px 4px 5px #484847;
+   
 }
 
 
@@ -85,4 +87,5 @@ h3 {
 .DOWSE,
 .STAAK {
     text-align: left;
+}
 }
