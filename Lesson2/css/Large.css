@@ -3,7 +3,7 @@
 @media only screen and (min-width:60em) {
     main, header, footer{
         grid-template-columns: repeat(3, 1fr);
-        width:900px; 
+        width:auto; 
     
     }
 
@@ -16,4 +16,6 @@
         height: 100%;
         width: 100%;
     }
+
+
 }

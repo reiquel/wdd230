@@ -2,90 +2,91 @@
 
 @media screen and (min-width: 20em) {
 
-main {
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: 1fr;
-    column-gap: 15px;
+    main {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        column-gap: 15px;
+        
+    }
     
-}
-
-body {
-    font-size: 20px;
-    line-height: 1.5;
-    font-family: 'PT Sans Narrow', sans-serif;
-
-}
-
-h1 {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Kalam', cursive;
-}
-
-h2 {
-    font-size: 40px;
-    margin-bottom: 0.5rem;
-}
-
-h3{
-    background-color: seagreen;
-}
-
-body,
-header,
-main,
-footer {
-    margin: 1.25rem auto;
-    width: 750px;
+    body {
+        font-size: 20px;
+        line-height: 1.5;
+        font-family: 'PT Sans Narrow', sans-serif;
     
-}
-
-body {
-    margin-right: 100px;
-    margin-left: 100px;
-    background-color: rgba(142, 233, 172, 0.986);
-}
-
-header,
-footer {
-    background-color: seagreen;
-    color: black;
-    text-align: center;
-    padding: 1.25rem;
-    border-radius: 10px;
-    width: 760px;
-}
-
-.first,
-.second,
-.third {
-    background-color: white;
-    border-radius: 5px;
-    padding: 1em;
-    text-align: center;
-    box-shadow: 4px 4px 5px #484847;
-   
-}
-
-
-main article img {
-    border: 2px solid white;
-    box-shadow: 6px 6px 10px #484846;
-    width: 100%;
-}
-
-h3 {
-    font-size: 30px;
-    color: black;
-    background-size: cover;
-    font-family: 'Kalam', cursive;
-
-}
-
-.MoMa,
-.DOWSE,
-.STAAK {
-    text-align: left;
-}
-}
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 26px;
+        font-family: 'Kalam', cursive;
+    }
+    
+    h2 {
+        font-size: 20px;
+      
+    }
+    
+    h3{
+        background-color: seagreen;
+    }
+    
+    body,
+    header,
+    main,
+    footer {
+        margin: 17px;
+        width: auto;
+        
+    }
+    
+    body {
+        margin-right: 15px;
+        margin-left: 15px;
+        background-color: rgba(142, 233, 172, 0.986);
+    }
+    
+    header,
+    footer {
+        background-color: seagreen;
+        color: black;
+        text-align: center;
+        padding: 1.25rem;
+        border-radius: 10px;
+        width: 330px;
+    }
+    
+    .first,
+    .second,
+    .third {
+        background-color: white;
+        border-radius: 5px;
+        padding: 15px 15px 15px 15px;
+        text-align: center;
+        box-shadow: 4px 4px 5px #484847;
+       
+        margin: 15px;
+    }
+    
+    
+    main article img {
+        border: 2px solid white;
+        box-shadow: 6px 6px 10px #484846;
+        width: 100%;
+    }
+    
+    h3 {
+        font-size: 30px;
+        color: black;
+        background-size: cover;
+        font-family: 'Kalam', cursive;
+    
+    }
+    
+    .MoMa,
+    .DOWSE,
+    .STAAK {
+        text-align: left;
+    }
+    }

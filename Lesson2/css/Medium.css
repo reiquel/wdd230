@@ -1,11 +1,11 @@
 /*Lesson 2 CSS-tablet view*/
 
 @media only screen and (min-width: 32.5em) {
-    main {
+    main, header, footer {
         grid-template-columns: repeat(2, 1fr );
-    
+        width: auto;
     }
-
+ 
     .third {
         grid-column: span 2;
 
