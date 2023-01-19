@@ -4,7 +4,7 @@
 
     main {
         display: grid;
-        margin: 0 auto;
+        margin: auto;
         grid-template-columns: 1fr;
         column-gap: 15px;
         
@@ -36,7 +36,7 @@
     header,
     main,
     footer {
-        margin: 17px;
+        margin: 12px;
         width: auto;
         
     }
@@ -54,7 +54,7 @@
         text-align: center;
         padding: 1.25rem;
         border-radius: 10px;
-        width: 330px;
+        width: auto;
     }
     
     .first,
