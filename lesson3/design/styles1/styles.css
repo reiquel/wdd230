@@ -260,7 +260,6 @@ a {
 span.navF {
     background-color: var(--main-color);
     color: var(--default-light);
-    text-decoration: underline var(--secondary-color);
     padding: 0.5rem;
 }
 span.navFH {
