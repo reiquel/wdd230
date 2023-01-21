@@ -103,7 +103,7 @@ nav a, span.navR {
     box-shadow: 0 0 10px var(--default-dark);
 }
 nav a.at, nav a:active, span.navA {
-    background-color: var(--main-color);
+    background-color: var(--default-dark);
     box-shadow: 0 0 10px var(--main-color);
     font-weight: bold;
     padding: 1em 0;
