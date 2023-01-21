@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Exo+2:wght@800&display=swap');
 
 :root {
-    --main-color: #2e8b57;
+    --main-color: #064521;
     --secondary-color: #add8e6;
-    --accent-color: #90ee90;
+    --accent-color: #2e8b57;
     --default-light: #ffffff;
     --default-dark: #0c0c0c;
 
@@ -60,8 +60,8 @@ header {
     padding: 1rem;
     position: relative;
     text-align: center;
-    background-color: var(--main-color);
-    box-shadow: 0 0 10px var(--main-color);
+    background-color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
 }
 header > span {
     display: block;
@@ -104,15 +104,15 @@ nav a, span.navR {
 }
 nav a.at, nav a:active, span.navA {
     background-color: var(--default-dark);
-    box-shadow: 0 0 10px var(--main-color);
+    box-shadow: 0 0 10px var(--accent-color);
     font-weight: bold;
     padding: 1em 0;
     z-index: 9;
 }
 nav a:hover, span.navH {
     background-color: var(--default-light);
-    box-shadow: 0 0 10px var(--default-light), inset 0 0 10px var(--main-color);
-    color: var(--main-color);
+    box-shadow: 0 0 10px var(--default-light), inset 0 0 10px var(--accent-color);
+    color: var(--accent-color);
     font-weight: bold;
     padding: 1em 0;
     z-index: 7;
@@ -124,7 +124,7 @@ main {
     background-color: var(--default-light);
 }
 h2 {
-    color: var(--main-color);
+    color: var(--accent-color);
 }
 h3, h4 {
     color: var(--default-dark);
@@ -159,7 +159,7 @@ ul.more-spacing-bottom > li {
     padding-bottom: 1rem;
 }
 .bgGreen {
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
 }
 .bgDark {
     background-color: var(--default-dark);
@@ -168,7 +168,7 @@ ul.more-spacing-bottom > li {
     background-color: var(--secondary-color);
 }
 .cGreen {
-    color: var(--main-color);
+    color: var(--accent-color);
 }
 .cWhite {
     color: var(--default-dark);
@@ -196,7 +196,7 @@ a {
 }
 .color-scheme {
     box-shadow: 2px 2px 5px var(--default-dark);
-    border: solid 2px var(--main-color);
+    border: solid 2px var(--accent-color);
     border-radius: 5px;
     padding: 0.5rem;
 }
@@ -238,7 +238,7 @@ a {
     margin-left: 1rem;
 }
 .typo-holder > h2 {
-    color: var(--main-color);
+    color: var(--accent-color);
     padding: 1rem;
     margin: 0;
 }
@@ -251,19 +251,19 @@ a {
     text-align: left;
 }
 .typo-holder h1 {
-    background: var(--main-color);
+    background: var(--accent-color);
     padding: 1rem;
     margin: 0;
     color: var(--default-dark);
 }
 span.navF {
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
     color: var(--default-light);
     text-decoration: underline var(--secondary-color);
     padding: 0.5rem;
 }
 span.navFH {
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
     color: var(--default-light);
     text-shadow: 0 0 10px var(--secondary-color);
     text-decoration: underline var(--secondary-color);
@@ -290,7 +290,7 @@ h4 + p {
 /* Styles for the footer and it's child elements */
 footer {
     box-shadow: 0 0 10px var(--default-dark);
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
     font-family: var(--paragraph-font);
     color: var(--default-dark);
     text-align: center;

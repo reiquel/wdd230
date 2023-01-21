@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Exo+2:wght@800&display=swap');
 
 :root {
-    --main-color: #2e8b57;
+    --main-color: #064521;
     --secondary-color: #add8e6;
-    --accent-color: #90ee90;
+    --accent-color: #2e8b57;
     --default-light: #ffffff;
     --default-dark: #0c0c0c;
 
@@ -60,7 +60,7 @@ header {
     padding: 1rem;
     position: relative;
     text-align: center;
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
     box-shadow: 0 0 10px var(--main-color);
 }
 header > span {
@@ -112,7 +112,7 @@ nav a.at, nav a:active, span.navA {
 nav a:hover, span.navH {
     background-color: var(--default-light);
     box-shadow: 0 0 10px var(--default-light), inset 0 0 10px var(--main-color);
-    color: var(--main-color);
+    color: var(--default-dark);
     font-weight: bold;
     padding: 1em 0;
     z-index: 7;
@@ -128,6 +128,7 @@ h2 {
 }
 h3, h4 {
     color: var(--default-dark);
+    justify-content: center;
 }
 section {
     padding: 0 1em;
@@ -278,6 +279,9 @@ span.navFH {
 .typo-holder.more-spacing .bgWhite {
     box-shadow: inset 0 0 0 1px var(--default-dark);
 }
+.whiteC {
+    color: var(--default-light);
+}
 
 h4 {
     margin-left: 15px;
@@ -290,7 +294,7 @@ h4 + p {
 
 footer {
     box-shadow: 0 0 10px var(--default-dark);
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
     font-family: var(--paragraph-font);
     color: var(--default-dark);
     text-align: center;
