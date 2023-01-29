@@ -297,6 +297,7 @@ footer {
     position: relative;
     padding: 1rem;
     z-index: 10;
+
 }
 footer a {
     color: var( --default-dark);
@@ -310,6 +311,8 @@ footer a:hover {
     display: block;
     font-size: 0.9rem;
     color: var( --default-dark);
+    display: flex;
+    justify-content: center;
 }
 
 #too-small {

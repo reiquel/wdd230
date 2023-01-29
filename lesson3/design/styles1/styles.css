@@ -60,7 +60,7 @@ header {
     padding: 1rem;
     position: relative;
     text-align: center;
-    background-color: var(--accent-color);
+    background-color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
 }
 header > span {
@@ -293,7 +293,7 @@ h4 + p {
 
 footer {
     box-shadow: 0 0 10px var(--default-dark);
-    background-color: var(--accent-color);
+    background-color: var(--main-color);
     font-family: var(--paragraph-font);
     color: var(--default-dark);
     text-align: center;
@@ -313,5 +313,7 @@ footer a:hover {
     display: block;
     font-size: 0.9rem;
     color: var(--default-dark);
+    display: flex;
+    justify-content: center;
 }
 
