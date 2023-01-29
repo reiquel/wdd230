@@ -1,9 +1,9 @@
 :root {
-    --main-color: #2e8b57;
+    --main-color: #064521;
     --secondary-color: #add8e6;
-    --accent-color: #90ee90;
+    --accent-color: #2e8b57;
     --default-light: #ffffff;
-    --default-dark: #2f2f2f;
+    --default-dark: #0c0c0c;
 
     --header-font: 'Exo 2', sans-serif;
     --paragraph-font: 'Comfortaa', sans-serif;
@@ -14,11 +14,13 @@ body {
 }
 header {
     box-shadow: 0 0 10px var(--default-dark);
+    background-color: #2e8b57;
 }
 header h1 {
     width: 230px;
     margin-left: auto;
     margin-right: auto;
+    color: black;
 }
 nav {
     position: static;
@@ -44,4 +46,8 @@ section.grid img {
     grid-template-columns: 1fr;
     width: 90%;
     margin: 0 auto;
+}
+
+footer p{
+    color: black;
 }

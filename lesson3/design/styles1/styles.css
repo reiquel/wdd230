@@ -60,7 +60,7 @@ header {
     padding: 1rem;
     position: relative;
     text-align: center;
-    background-color: var(--accent-color);
+    background-color: #2e8b57;
     box-shadow: 0 0 10px var(--accent-color);
 }
 header > span {
@@ -98,8 +98,8 @@ nav a, span.navR {
     text-align: center;
     position: relative;
     text-decoration: none;
-    color: var(--default-light);
-    background-color: var(--default-dark);
+    color: white;
+    background-color: #0c0c0c;
     box-shadow: 0 0 10px var(--default-dark);
 }
 nav a.at, nav a:active, span.navA {
@@ -111,7 +111,7 @@ nav a.at, nav a:active, span.navA {
 }
 nav a:hover, span.navH {
     background-color: var(--default-light);
-    box-shadow: 0 0 10px var(--default-light), inset 0 0 10px var(--main-color);
+    box-shadow: 0 0 10px var(--default-light), inset 0 0 10px var(--default-dark);
     color: var(--default-dark);
     font-weight: bold;
     padding: 1em 0;
@@ -252,7 +252,7 @@ a {
     text-align: left;
 }
 .typo-holder h1 {
-    background: var(--main-color);
+    background: var(--default-dark);
     padding: 1rem;
     margin: 0;
     color: var(--default-light);
@@ -293,7 +293,7 @@ h4 + p {
 
 footer {
     box-shadow: 0 0 10px var(--default-dark);
-    background-color: var(--accent-color);
+    background-color: #2e8b57;
     font-family: var(--paragraph-font);
     color: var(--default-dark);
     text-align: center;

@@ -6,7 +6,7 @@ body {
     top: 0; left: 0;
     position: fixed;
     grid-template-columns: 1fr;
-    background-color: #2f2f2f;
+    background-color: #0c0c0c;;
     justify-items: center;
     align-items: center;
     color: white;
