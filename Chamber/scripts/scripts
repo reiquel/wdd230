@@ -1,17 +1,29 @@
-const navElement = document.querySelector( 'nav' ); 
+// Set the year for copyright
+document.getElementById("year").innerHTML = new Date().getFullYear()
 
-const buttonElement = document.querySelector('.navation-m');
+// Set the date when last updated
+var temp = document.lastModified
+var n = parseInt(temp.substring(temp.length-8,temp.length-6))
+if (n>12) {
+    document.getElementById("footer-date").innerHTML = "Last Modification: "+
+        temp.substring(0,temp.length-8)+(n-12)+temp.substring(temp.length-6)+" pm"
+}
+else {
+    document.getElementById("footer-date").innerHTML = "Last Modification: "+
+        temp
+}
 
-const closeNavButtonElement = document.querySelector( '#buttom-m' );
+function scrollDown(elem) {
+    if (elem.scrollTop < 100) {
+        document.querySelector('#scroll-down').className = "up"
+    }
+    else {
+        document.querySelector('#scroll-down').className = ""
+    }
+}
 
-buttonElement.addEventListener( 'click', () => {
 
-  let isNavOpen = Array.from(navElement.classList).includes('nav-open');
+let today  = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})
 
-  console.log(isNavOpen);
 
-  navElement.classList.toggle( 'nav-open', ! isNavOpen );
-
-} );
-
-closeNavButtonElement.addEventListener( 'click', () => navElement.classList.remove( 'nav-open' ) );
+document.getElementById("date").innerHTML = today

@@ -75,14 +75,15 @@
   }
   
   nav a:hover {
-    border-bottom: 5px solid var(--accent1-color);
+    bottom: 5px solid var(--accent1-color);
     color: var(--accent1-color);
-    transition: all .1s ease-in;
+    padding: 1em;
+    
   }
   
   nav a.active {
-    border-bottom: 2px solid var(--accent1-color);
-    /* color: var(--accent1-color); */
+    bottom: 5px solid var(--accent1-color);
+  
   }
   
   .navation-m {
@@ -136,9 +137,22 @@
   
   header {
     background-color: var(--primary-color);
- 
+    
+
+
   }
-  
+
+  .media:first-child{
+    width: 70px;
+    height: 70px;
+  }
+
+
+
+  .media{
+ display: flex;
+  align-items: left;
+  }
   .nav-al {
     display: flex;
     justify-content: space-between;
@@ -148,10 +162,10 @@
   
   .navation-s {
     display: flex;
-    align-items: center;
-    column-gap: 15px;
+
   }
-  
+
+
   .date {
     padding: 10px 0;
     background-color: var(--accent1-color);
