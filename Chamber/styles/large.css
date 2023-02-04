@@ -66,6 +66,11 @@
 .svg2{
   display: none;
 }
+
+.svg3{
+  display: none;
+}
+
   .join {
     grid-area: join;
   }
