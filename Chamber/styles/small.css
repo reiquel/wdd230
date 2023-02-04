@@ -1,239 +1,212 @@
 
+
 :root {
-    --primary-color: #064521;  
-    --secondary-color: #bebaba;
-    --accent1-color: #0dc29b;
-    --accent2-color: #0dc29b;
-    --accent3-color: #ffffff;
-    --accent4-color: #0e0808;
-  
-    font-family: 'Comfortaa', cursive;
-    font-family: 'Playfair Display', serif;
-  }
-  
-  *,
-  *::after,
-  *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 18px;
-    font-family: var(--paragraph-font);
-    font-weight: 500;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-  }
-  
-  img {
-    display: block;
-    width: 100%;
-  }
-  
-  .logo-img {
-    max-width: 100px;
-    border: #0e0808;
-    border-radius: 3px;
-  }
-  
-  
-  nav.nav-open {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.952);
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    padding-top: 80px;
-    text-align: center;
-    transition: background-color .5s ease;
-  }
-  
-  nav {
-    display: none;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: none;
-  }
+  --primary-color:#064521;  
+  --secondary-color: #ededed;
+  --accent1-color: #77ddf7;
+  --accent2-color: #000000;
+  --accent3-color: #ffffff;
 
-  nav ul.open {
-    display: block;
-  }
-  
-  nav ul li:not(:last-of-type) {
-    margin-bottom: 25px;
-  }
-  
-  nav a {
-    padding: 8px 16px;
-    color: var(--accent3-color);
-  }
-  
-  nav a:hover {
-    bottom: 5px solid var(--accent1-color);
-    color: var(--accent1-color);
-    padding: 1em;
-    
-  }
-  
-  nav a.active {
-    bottom: 5px solid var(--accent1-color);
-  
-  }
-  
-  .navation-m {
-    background-color: transparent;
-    color: var(--accent4-color)
-  }
-  
-  .navation-m i,
-  .media i,
-  nav i {
-    font-size: 30px;
-  }
-  
+  --heading-font: 'Comfortaa', cursive;
+  --paragraph-font: 'Playfair Display', serif;
+}
 
-  
-  main {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat( 5, minmax(250px, auto) );
-    gap: 10px;
-    margin: 20px 0;
-  }
-  
-  article, .spotlights {
-    background-color: var(--secondary-color);
-    padding: 15px;
-  }
-  
-  .join, .spotlight-3 {
-    display: none;
-  }
-  
-  [class^="spotlight-"] {
-    border: 1px solid var(--accent2-color);
-    min-height: 250px;
-  }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  #exit {
-    position: absolute;
-    top: 55px;
-    right: 35px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  header, footer {
-    padding: 20px;
-  }
-  
-  header {
-    background-color: var(--primary-color);
-    
+html {
+  font-size: 18px;
+  font-family: var(--paragraph-font);
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.logo-img {
+  max-width: 100px;
+}
+
+nav.nav-open {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.952);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  text-align: center;
+  transition: background-color .5s ease;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+nav a {
+  padding: 8px 16px;
+  color: var(--secondary-color);
+}
+
+nav a:hover {
+  color: var(--accent1-color);
+  padding: 1em;
+}
 
 
-  }
+#Exit-bt {
+  position: absolute;
+  top: 55px;
+  right: 35px;
+}
 
-  .media:first-child{
-    width: 70px;
-    height: 70px;
-  }
+a {
+  text-decoration: none;
+}
 
+header, footer {
+  padding: 20px;
+}
 
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
 
-  .media{
- display: flex;
-  align-items: left;
-  }
-  .nav-al {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .navation-s {
-    display: flex;
+.nav-al {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
-  }
+.nav-t {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
 
+.media a:not(:last-of-type) {
+  margin-right: 5px;
+}
 
-  .date {
-    padding: 10px 0;
-    background-color: var(--accent1-color);
-    color: var(--accent4-color);
-    text-align: center;
-  }
-  
-  .media a {
-    color: var(--accent3-color);
-  }
-  
-  .media a:not(:last-child) {
-    margin-right: 8px;
-  }
-  
-  .media a:hover {
-    color: var(--accent1-color);
-  }
-  
-  .event {
-    grid-row: 2/3;
-  }
-  
-  .weather {
-    grid-row: 3/4;
-  }
-  
-  footer {
-    background-color: var(--primary-color);
-    color: var(--accent3-color);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .buttom-log {
-    max-width: 100px;
-    margin: 0 auto;
-    box-shadow: #0e0808;
-    border: #0e0808;
-    border-radius: 3px;
-  }
-  
-  .address {
-    margin-bottom: 10px;
-  }
-  nav button{
-    border: none;
-    font-size: 2rem
-  }
-  .email span {
-    display: block;
-    margin-bottom: 8px;
-  }
-  
-  .email a {
-    color: var(--secondary-color);
-  }
-  
-  .line {
-    margin: 10px 0;
-  }
-  
-  
-  .name div:not(:last-of-type) {
-  
-    margin-bottom: 5px;
-  
-  
-  }
-  
+.date1 {
+  padding: 10px 0;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  text-align: center;
+}
+
+.svg1,
+.svg3,
+.svg2 {
+  width: 30px;
+  height: 30px;
+  fill: var(--secondary-color);
+}
+
+.svg1:hover {
+  fill: var(--accent1-color);
+}
+
+.nav-2,
+#Exit-bt {
+  background-color: transparent;
+  border: none;
+}
+
+#Exit-bt .svg2 {
+  cursor: pointer;
+  fill: var(--accent3-color);
+}
+
+.nav-2:hover {
+  cursor: pointer;
+}
+
+.svg3:hover, 
+#Exit-bt:hover .svg2 {
+  fill: var(--accent1-color);
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat( 5, minmax(250px, auto) );
+  gap: 10px;
+  margin: 20px 0;
+}
+
+section, .spotlights {
+  background-color: var(--secondary-color);
+  padding: 15px;
+}
+
+.join, .spotlight-3 {
+  display: none;
+}
+
+[class^="spotlight-"] {
+  border: 1px solid var(--accent2-color);
+  min-height: 250px;
+}
+
+.event {
+  grid-row: 2/3;
+}
+
+.weather {
+  grid-row: 3/4;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.logo2 {
+  max-width: 100px;
+  margin: 0 auto 10px auto;
+}
+
+.footer2 {
+  margin-bottom: 10px;
+}
+
+.footer3 span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer3 a {
+  color: var(--secondary-color);
+}
+
+.footer-hr {
+  margin: 10px 0;
+}
+
+.signature div:not(:last-of-type) {
+  margin-bottom: 5px;
+}
 

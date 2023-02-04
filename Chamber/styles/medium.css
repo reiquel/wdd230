@@ -1,90 +1,88 @@
 
 @media screen and ( min-width: 48em ) {
-    nav button{
-        display:none;
-           }
-    .navation-s {
-      column-gap: 150px;
-    }  
-    
-    main {
-      display: grid;
-      grid-template-columns: 3fr 2fr;
-    }
 
+  .navation-s {
+    column-gap: 150px;
+  }  
   
-    .name div {
-      min-width: fit-content;
-      padding: 0 10px;
-    }
-  
-    .name div:not(:last-of-type) {
-      border-right: 1px solid var(--secondary-color);
-    }
+  main {
 
-    .weather, .join {
-        display: block;
-      }
-    
-      .hero {
-        grid-column: span 2;
-      }
-    
-      .news {
-        grid-column: span 2;
-      }
-    
-      .join {
-        display: block;
-      }
-    
-      .spotlights {
-        grid-column: span 2;
-        display: flex;
-        column-gap: 10px;
-      }
-    
-      [class^="spotlight-"] {
-        min-width: 50%;
-      }
-    
-      .event {
-        grid-row: auto;
-      }
-      
-      .weather {
-        grid-row: auto;
-      }
-    
-      .join {
-        grid-row: 4/5;
-        grid-column: 1/3;
-      }
-    
-      .information {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-    
-      .buttom-log {
-        margin-right: 15px;
-      }
-      
-      .address {
-        display: flex;
-        align-items: center;
-        text-align: left;
-      }
-    
-      .email span {
-        margin-bottom: 0px;
-      }
-    
-      .name {
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-  
+    display: grid;
+    grid-template-columns: 3fr 2fr;
   }
+
+  .weather, .join {
+    display: block;
+  }
+
+  .hero {
+    grid-column: span 2;
+  }
+
+  .news {
+    grid-column: span 2;
+  }
+
+  .join {
+    display: block;
+  }
+
+  .spotlights {
+    grid-column: span 2;
+    display: flex;
+    column-gap: 10px;
+  }
+
+  [class^="spotlight-"] {
+    min-width: 50%;
+  }
+
+  .event {
+    grid-row: auto;
+  }
+  
+  .weather {
+    grid-row: auto;
+  }
+
+  .join {
+    grid-row: 4/5;
+    grid-column: 1/3;
+  }
+
+  .footer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo2 {
+    margin: 0 15px 0 0;
+  }
+  
+  .footer2 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer3 span {
+    margin-bottom: 0px;
+  }
+
+  .signature {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .signature div {
+    min-width: fit-content;
+    padding: 0 10px;
+  }
+
+  .signature div:not(:last-of-type) {
+    border-right: 1px solid var(--secondary-color);
+  }
+
+}
