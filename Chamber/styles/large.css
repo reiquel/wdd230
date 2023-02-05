@@ -49,6 +49,10 @@
     grid-area: hero;
   }
 
+  .first-img{
+    grid-area: hero;
+  }
+
   .news {
     grid-area: news;
   }

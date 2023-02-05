@@ -154,16 +154,40 @@ main {
   gap: 10px;
   margin: 20px 0;
 }
-
+body{
+  background-color: #88ecc6;
+}
 section, .spotlights {
-  background-color: var(--secondary-color);
+  background-color: #044353;
   padding: 15px;
 }
+.first-img{
+  max-width: 100%; height: auto 
 
+}
 .join, .spotlight-3 {
   display: none;
 }
 
+.join-buttom{
+  display: block; 
+  height: 50px; 
+  width: 200px; 
+  background: #606060; 
+  color: #ffffff; 
+  text-align: center; 
+  font-weight: bold; 
+  font-size: 100%; 
+  line-height: 50px; 
+  font-family: Arial; 
+  border-radius: 20px; 
+  text-decoration: none;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8)
+}
+h1, h2{
+  color: #faf6f6;
+  position: relative;;
+}
 [class^="spotlight-"] {
   border: 1px solid var(--accent2-color);
   min-height: 250px;
