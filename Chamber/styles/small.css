@@ -38,6 +38,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   position: sticky;
 }
+.logo {
+  display: flex;
+  align-items: center;}
 img {
   display: block;
   width: 100%;
@@ -47,6 +50,12 @@ img {
   max-width: 100px;
 }
 
+.logo-message {
+  text-align: center;
+}
+p{
+  color: #ffffff;
+}
 nav.nav-open {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.952);
