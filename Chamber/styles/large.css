@@ -1,6 +1,6 @@
 @media screen and ( min-width: 62em ) {
 
-  header, 
+  #head1 p, header, 
   main, 
   footer {
     max-width: 1440px;
