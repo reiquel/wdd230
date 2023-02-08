@@ -33,3 +33,8 @@ buttonElement.addEventListener( 'click', () => {
 } );
 
 closeNavButtonElement.addEventListener( 'click', () => navElement.classList.remove( 'nav-open' ) );
+
+const text = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+
+
+document.getElementById(one2).innerHTML(text);
