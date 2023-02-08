@@ -37,4 +37,4 @@ closeNavButtonElement.addEventListener( 'click', () => navElement.classList.remo
 const text = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 
 
-document.getElementById(one2).innerHTML(text);
+document.getElementById("one2").innerHTML = text;
