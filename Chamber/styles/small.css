@@ -94,7 +94,9 @@ nav a:hover {
   color: var(--accent1-color);
   padding: 1em;
 }
-
+#course2{
+  color: #F9F110;
+}
 
 #Exit-bt {
   position: absolute;
