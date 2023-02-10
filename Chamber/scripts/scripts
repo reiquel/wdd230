@@ -38,3 +38,5 @@ const text = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 
 
 
 document.getElementById("one2").innerHTML = text;
+
+index.html.use(cors())
