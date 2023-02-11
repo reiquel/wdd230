@@ -39,3 +39,21 @@ const text = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 
 
 document.getElementById("one2").innerHTML = text;
 
+
+
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=New York,us&appid=3045dd712ffe6e702e3245525ac7fa38')
+  .then(response => response.json())
+  .then(data => {
+    let temp = data.main.temp - 273.15;
+    let wind = data.wind.speed
+    let temperature = Math.round(temp);
+    let windSpeed = Math.round(wind);
+    let wind2 = 13.12 + (0.6215 * temperature) - (11.37 * (Math.pow(windSpeed, 0.16))) + (0.3965 * temperature * (Math.pow(windSpeed, 0.16)));
+    let windChill = Math.round(wind2);
+    document.getElementById("temp").innerHTML = temperature;
+    document.getElementById("wind-speed").innerHTML = windSpeed;
+    document.getElementById("wind-chill").innerHTML = windChill;
+  });
+
+ 
+

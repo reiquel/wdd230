@@ -97,13 +97,34 @@ nav a:hover {
 #course2{
   color: #F9F110;
 }
-
+#climate{
+  color: #ffffff;
+}
 #Exit-bt {
   position: absolute;
   top: 55px;
   right: 35px;
 }
 
+#twoelements{
+  display: flex;
+  align-items: center;
+}
+#weth{
+  height: 80px;
+  width: 80px;
+  border-right: 25px;
+}
+#temp{
+  margin-left: 10px;
+}
+#wind-chill{
+  color: #ffffff;
+}
+#real-climate{
+ font-size: 27px;
+ margin-left: 20px;
+}
 a {
   text-decoration: none;
 }
