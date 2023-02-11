@@ -118,6 +118,9 @@ nav a:hover {
 #temp{
   margin-left: 10px;
 }
+#welcome-id{
+  color: #000000;
+}
 #wind-chill{
   color: #ffffff;
 }
