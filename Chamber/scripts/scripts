@@ -1,59 +1,56 @@
-
-const date = new Date();
-
-const options = { 
-  weekday: 'long', 
-  year: 'numeric', 
-  month: 'long', 
-  day: 'numeric' 
-};
-
-
-document.querySelector('#date1').textContent = date.toLocaleDateString('en', options);
-
-document.querySelector('#year').textContent = date.getFullYear();
-
-document.querySelector('#update').textContent = date.toLocaleString();
-
-
-// Navigation button
-
-const navElement = document.querySelector( 'nav' ); 
-
-const buttonElement = document.querySelector('.nav-2');
-
-const closeNavButtonElement = document.querySelector( '#Exit-bt' );
-
-buttonElement.addEventListener( 'click', () => {
-
-  let isNavOpen = navElement.classList.contains('.nav-open');
-
-  navElement.classList.toggle( 'nav-open', ! isNavOpen );
-
-} );
-
-closeNavButtonElement.addEventListener( 'click', () => navElement.classList.remove( 'nav-open' ) );
-
-const text = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-
-
-document.getElementById("one2").innerHTML = text;
+//Script for Windchill in Celcius
+const temp = parseFloat(document.querySelector("#temp").textContent);
+const speed = parseFloat(document.querySelector("#speed").textContent);
+const f = 13.12 + 0.6215 * temp - 11.37 * speed ** 0.16 + 0.3965 * temp * speed ** 0.16
+if (temp <= 10 && speed > 4.8) {
+windchill= f.toFixed(1);
+}
+else {
+    windchill = "NA";
+}
+document.getElementById("windchill").innerHTML = windchill;
 
 
 
-  fetch('https://api.openweathermap.org/data/2.5/weather?q=New York,us&appid=3045dd712ffe6e702e3245525ac7fa38')
-  .then(response => response.json())
-  .then(data => {
-    let temp = data.main.temp - 273.15;
-    let wind = data.wind.speed
-    let temperature = Math.round(temp);
-    let windSpeed = Math.round(wind);
-    let wind2 = 13.12 + (0.6215 * temperature) - (11.37 * (Math.pow(windSpeed, 0.16))) + (0.3965 * temperature * (Math.pow(windSpeed, 0.16)));
-    let windChill = Math.round(wind2);
-    document.getElementById("temp").innerHTML = temperature;
-    document.getElementById("wind-speed").innerHTML = windSpeed;
-    document.getElementById("wind-chill").innerHTML = windChill;
-  });
+date = new Date(Date.now());
+document.querySelector('#©').textContent = date.getFullYear();
 
+const opciones = 
+{ weekday: 'long', 
+year: 'numeric', 
+month: 'numeric', 
+day: 'numeric' };
+
+document.querySelector('#dateMod').textContent = 
+new Date(Date.now()).toLocaleString();
+
+const opciones2 = 
+{ weekday: 'long', 
+year: 'numeric', 
+month: 'long', 
+day: 'numeric' };
+
+
+document.querySelector('#datetime').textContent = 
+new Date(Date.now()).toLocaleString('en-UK',opciones2);
+
+function toggleoptions() {
+    document.getElementById('first-nav').classList.toggle('open');
+    document.getElementById('button-1').classList.toggle('open');
+}
+
+const x = document.getElementById('button-1');
+
+x.onclick = toggleoptions;
+
+article = document.querySelector('#invitation-1');
+
+weekday = date.getDay();
+
+/* Banner */
+
+if (weekday === 1 || weekday === 2){
+    article.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    article.setAttribute('class', 'banner-invitation-1');
+}
  
-
