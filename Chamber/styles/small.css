@@ -118,7 +118,7 @@ header .social a {
 }
 
 header div nav {
-    background-color: white;
+    background-color: #064521;
 }
 
 header div nav ul {
@@ -138,8 +138,8 @@ header div nav ul li a {
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-	color: black;
-    border-top: 1px solid rgb(46, 120, 139); ;
+	color: white;
+  
     font-size: 0.8rem;
     margin: 0;
     text-align: center;
