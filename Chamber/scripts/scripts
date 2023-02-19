@@ -21,8 +21,9 @@ year: 'numeric',
 month: 'numeric', 
 day: 'numeric' };
 
-document.querySelector('#dateMod').textContent = 
-new Date(Date.now()).toLocaleString();
+let currentDate = document.lastModified;
+document.querySelector('#dateMod').textContent = currentDate;
+
 
 const opciones2 = 
 { weekday: 'long', 
@@ -53,4 +54,3 @@ if (weekday === 1 || weekday === 2){
     article.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
     article.setAttribute('class', 'banner-invitation-1');
 }
- 
