@@ -178,5 +178,11 @@ herodiscover, .event, .lazyloading {
     .mygallery :hover {
         box-shadow: 0 0 50px black;
     }
-
+	.shadow{
+		width: 300px;
+		width: 400px;
+	}
+    figcaption{
+        width: 200px;
+    }
   }

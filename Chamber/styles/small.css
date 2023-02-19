@@ -392,3 +392,16 @@ picture.optipic {
     transition: filter 0.6s;
     max-width:100%; 
 }
+
+.bannerdiscover{
+    width: 300;
+    height: 400;
+}
+
+.shadow{
+    width: 70px;
+}
+
+figcaption{
+    width: 70px;
+}

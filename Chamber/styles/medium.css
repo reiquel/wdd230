@@ -150,6 +150,16 @@
 		font-family: 'Lato', sans-serif;
 	}	
 
+	.bannerdiscover{
+		width: 300;
+		height: 400;
+	}
+	.shadow{
+		width: 300px;
+		width: 400px;
+	}
 
-
+	figcaption{
+        width: 200px;
+    }
 }
