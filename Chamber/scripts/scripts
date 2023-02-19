@@ -20,10 +20,10 @@ const opciones =
 year: 'numeric', 
 month: 'numeric', 
 day: 'numeric' };
-s
+
+
 let currentDate = document.lastModified;
 document.querySelector('#dateMod').textContent = currentDate;
-
 
 const opciones2 = 
 { weekday: 'long', 
@@ -35,14 +35,14 @@ day: 'numeric' };
 document.querySelector('#datetime').textContent = 
 new Date(Date.now()).toLocaleString('en-UK',opciones2);
 
-function toggleoptions() {
+function toggleMenu() {
     document.getElementById('first-nav').classList.toggle('open');
     document.getElementById('button-1').classList.toggle('open');
 }
 
 const x = document.getElementById('button-1');
 
-x.onclick = toggleoptions;
+x.onclick = toggleMenu;
 
 article = document.querySelector('#invitation-1');
 
@@ -52,5 +52,5 @@ weekday = date.getDay();
 
 if (weekday === 1 || weekday === 2){
     article.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-    article.setAttribute('class', 'banner-invitation-1');
+    article.setAttribute('class', 'banner-message');
 }
