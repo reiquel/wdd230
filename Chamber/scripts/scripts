@@ -20,7 +20,7 @@ const opciones =
 year: 'numeric', 
 month: 'numeric', 
 day: 'numeric' };
-
+s
 let currentDate = document.lastModified;
 document.querySelector('#dateMod').textContent = currentDate;
 
