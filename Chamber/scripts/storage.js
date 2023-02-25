@@ -18,6 +18,4 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 // show todays date.
-todayDisplay.textContent = (Date.now().getTime()/(1000*60*60*24)).toFixed(0);
 
-l
