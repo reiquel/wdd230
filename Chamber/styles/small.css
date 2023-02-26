@@ -401,3 +401,34 @@ picture.optipic {
 figcaption{
     width: 70px;
 }
+
+.container{
+    grid-column: 2/3;
+    max-width: 1444px;
+  }
+
+  table{
+    width: 15px;
+	justify-content: center;
+    border: #85ecb2;
+    grid-column: 1/2;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f79999;
+  }
+  form {
+ display: grid;
+ justify-content: center;
+  }
+
+  #thankyou{
+    background-color: #0be9b9;
+    color: #121335;
+    border-radius: 15px;
+  }

@@ -29,6 +29,22 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   
+  .container{
+    grid-column: 1/5;
+  }
+
+  #table-1{
+	justify-content: center;
+    background-color: #85ecb2;
+    grid-column: 1/2;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: inherit;
+    max-width: 25px;
+  }
   .options {
       grid-column: 2/3;
       grid-row: 1/4;
@@ -185,4 +201,12 @@ herodiscover, .event, .lazyloading {
     figcaption{
         width: 200px;
     }
+
+    #thankyou{
+        grid-column: 1/5;
+        height: 500px;
+        font-size: 25px;
+		background-color: #0be9b9;
+		color: #121335;
+	  }
   }

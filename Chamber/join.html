@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web  portal where where people will get to learn more about the Toursim and Education Chamber.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>The Toursim and Education Chamber Chamber of Commerce Join Page</title>
+</head>
+<body>
+    <header>
+
+        <div class="display-1">
+           <img class="logo" src="images/logo.png" alt="The Toursim and Education Chamber of Commerce">
+           <h1 class="header-title">The Tourism and Education Chamber</h1>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook image to access to facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter icon that will allow us to login to twitter"></a>
+          </div>
+        
+        <div>
+            <button id="button-1"><span>&#9776;</span><span>X</span></button>
+        </div>
+        
+		<div class="options">
+            <nav>
+                <ul id="first-nav">
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
+                    <li><a href="#">Contact</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <div class="date-header">
+            <p id="datetime"></p>
+        </div>
+                          
+    </header>
+    <main id="main-3">
+      <div class="container">
+        <div class="form">
+          <table id="table-1">
+            <tr>
+              <th>Memberships</th>
+              <th>Advertising</th>
+              <th>Event discount</th>
+              <th>Trainings</th>
+              <th>Advance skills courses</th>
+              <th>Cost</th>
+            </tr>
+            <tr>
+              <td>NP Membership</td>
+              <td>X</td>
+              <td>X</td>
+              <td>✔</td>
+              <td>X</td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td>Bronze Membership</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>X</td>
+              <td>X</td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td>Silver Membership</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>X</td>
+              <td>$400</td>
+            </tr>
+            <tr>
+              <td>Gold Membership</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>$600</td>
+            </tr>
+          </table>
+          <form action="thankyou.html" method="get">
+            <fieldset>
+            <legend>Applicant information</legend>
+            <label for="first-name">First Name <span class="required">*</span></label>
+            <input type="text" name="first-name" id="first-name" required>
+            <label for="last-name">Last Name <span class="required">*</span></label>
+            <input type="text" name="last-name" id="last-name" required>
+            <label for="position-title">Position Title</label>
+            <input type="text" name="position-title" id="position-title" pattern="[a-zA-Z\- ]{7,}" title="Must contain only alpha characters, hyphens, and spaces and must be longer than 7 characters">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" name="email" id="email" placeholder="example@example.com" required>
+            <label for="cell-phone">Cell Phone <span class="required">*</span></label>
+            <input type="tel" name="cell-phone" id="cell-phone" required>
+            <label for="business-name">Business Name/Title <span class="required">*</span></label>
+            <input type="text" name="business-name" id="business-name" required>
+            <label for="membership-level">Membership Level <span class="required">*</span></label>
+            <select id="form-2" name="membership-level" id="membership-level" required>
+              <option value="">-- Membership level --</option>
+              <option value="np">NP Membership </option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+            <label for="business-description">Business Description</label>
+            <textarea name="business-description" id="business-description"></textarea>
+            <input type="hidden" name="date-and-time" value="<?php echo date('Y-m-d H:i:s'); ?>">
+            <input type="submit" value="Sign Up">
+          </fieldset>
+          </form>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+        <div class="logo-footer">
+            <img class="logo-foot" src="images/logo.png" alt="Chamber of Commerce Logo image for the footer">
+                </div>
+                <div class="title-footer">
+                    <span>The Tourism and </span>
+                    <span>Education Chamber</span><br>
+                </div>
+                <div class="contact">
+                    <p>nfo@tourschamber.org</p>
+                    <p>+(425) 6791-2587</p>
+                    <a href="https://goo.gl/maps/DC1U7W2insRc2Gw79">
+                        📍 Location
+                        </a>
+                            <br><br>
+                    </div>
+                <div class="info">  
+                        <span>  &nbsp; &nbsp; &copy;<span id="©">
+                        </span>  &nbsp; The Tourism and Education Chamber of Commerce &nbsp;</span> |  &nbsp; Reiquel Carela &nbsp; |  &nbsp; WDD 230 Project &nbsp;|  &nbsp; Last modification: &nbsp;  &nbsp; <span id="dateMod"></span>
+                    
+                </div>            
+            </footer>
+            <script src="scripts/scripts1.js"></script>
+        </body>
+        </html>
