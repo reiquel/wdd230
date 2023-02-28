@@ -444,7 +444,8 @@ figcaption{
     display: block;
   }
 input {
-    padding: 10px;
+    padding: 7px;
+    background-color: white;
 }
   #thankyou{
     background-color: #0be9b9;
