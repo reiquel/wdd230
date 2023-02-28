@@ -30,18 +30,26 @@
 		grid-column: 1/4;
 	  }
 
-	  #table-1{
+	  table, th, td{
+		width: 15px;
 		justify-content: center;
-		background-color: #85ecb2;
+		border: 1px solid;
 		grid-column: 1/2;
 		border-radius: 15px;
 		margin-bottom: 25px;
-		margin-right: 5px;
 		padding-left: 15px;
 		padding-right: 15px;
-		font-size: inherit;
-		max-width: 25px;
+		font-size: 15px;
+		width: 500px;
 	  }
+	  form {
+		font-size: 15px;
+		 }
+	   
+		 form.sbs, input{
+		   display: block;
+		   border-radius: 10px;
+		 } 
 	.hero {
 		grid-column: 1/4;
 		grid-row: 1/2;

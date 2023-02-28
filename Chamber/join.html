@@ -96,19 +96,19 @@
           <form action="thankyou.html" method="get">
             <fieldset>
             <legend>Applicant information</legend>
-            <label for="first-name">First Name <span class="required">*</span></label>
+            <label class="sbs" for="first-name">First Name <span class="required">*</span></label>
             <input type="text" name="first-name" id="first-name" required>
-            <label for="last-name">Last Name <span class="required">*</span></label>
+            <label class="sbs" for="last-name">Last Name <span class="required">*</span></label>
             <input type="text" name="last-name" id="last-name" required>
-            <label for="position-title">Position Title</label>
+            <label class="sbs" for="position-title">Position Title</label>
             <input type="text" name="position-title" id="position-title" pattern="[a-zA-Z\- ]{7,}" title="Must contain only alpha characters, hyphens, and spaces and must be longer than 7 characters">
-            <label for="email">Email <span class="required">*</span></label>
+            <label class="sbs" for="email">Email <span class="required">*</span></label>
             <input type="email" name="email" id="email" placeholder="example@example.com" required>
-            <label for="cell-phone">Cell Phone <span class="required">*</span></label>
+            <label class="sbs" for="cell-phone">Cell Phone <span class="required">*</span></label>
             <input type="tel" name="cell-phone" id="cell-phone" required>
-            <label for="business-name">Business Name/Title <span class="required">*</span></label>
+            <label class="sbs" for="business-name">Business Name/Title <span class="required">*</span></label>
             <input type="text" name="business-name" id="business-name" required>
-            <label for="membership-level">Membership Level <span class="required">*</span></label>
+            <label class="sbs" for="membership-level">Membership Level <span class="required">*</span></label>
             <select id="form-2" name="membership-level" id="membership-level" required>
               <option value="">-- Membership level --</option>
               <option value="np">NP Membership </option>
@@ -116,7 +116,7 @@
               <option value="silver">Silver Membership</option>
               <option value="gold">Gold Membership</option>
             </select>
-            <label for="business-description">Business Description</label>
+            <label class="sbs" for="business-description">Business Description</label>
             <textarea name="business-description" id="business-description"></textarea>
             <input type="hidden" name="date-and-time" value="<?php echo date('Y-m-d H:i:s'); ?>">
             <input type="submit" value="Sign Up">
