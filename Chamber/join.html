@@ -53,43 +53,45 @@
         <div class="form">
           <table id="table-1">
             <tr>
-              <th>Memberships</th>
-              <th>Advertising</th>
-              <th>Event discount</th>
-              <th>Trainings</th>
-              <th>Advance skills courses</th>
-              <th>Cost</th>
+              <th id="thd">Memberships</th>
+              <th>NP Membership</th>
+              <th>Bronze Membership</th>
+              <th>Silver Membership</th>
+              <th>Gold Membership</th>
             </tr>
             <tr>
-              <td>NP Membership</td>
+              <td>Event discount</td>
               <td>X</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Advertising</td>
               <td>X</td>
               <td>✔</td>
               <td>X</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Trainings</td>
+              <td>✔</td>
+              <td>X</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Advance skills courses</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Cost</td>
               <td>Free</td>
-            </tr>
-            <tr>
-              <td>Bronze Membership</td>
-              <td>✔</td>
-              <td>✔</td>
-              <td>X</td>
-              <td>X</td>
               <td>$200</td>
-            </tr>
-            <tr>
-              <td>Silver Membership</td>
-              <td>✔</td>
-              <td>✔</td>
-              <td>✔</td>
-              <td>X</td>
               <td>$400</td>
-            </tr>
-            <tr>
-              <td>Gold Membership</td>
-              <td>✔</td>
-              <td>✔</td>
-              <td>✔</td>
-              <td>✔</td>
               <td>$600</td>
             </tr>
           </table>
@@ -116,10 +118,10 @@
               <option value="silver">Silver Membership</option>
               <option value="gold">Gold Membership</option>
             </select>
-            <label class="sbs" for="business-description">Business Description</label>
+            <label class="sbsl" for="business-description">Business Description</label>
             <textarea name="business-description" id="business-description"></textarea>
             <input type="hidden" name="date-and-time" value="<?php echo date('Y-m-d H:i:s'); ?>">
-            <input type="submit" value="Sign Up">
+            <input id="sign-1" type="submit" value="Sign Up">
           </fieldset>
           </form>
         </div>
