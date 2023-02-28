@@ -18,4 +18,25 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 // show todays date.
-todayDisplay.textContent = (Date.now().getTime()/(1000*60*60*24)).toFixed(0);
+
+
+
+//get the date of the user's first visit
+let firstVisit = new Date();
+
+//store the date of the user's first visit
+sessionStorage.setItem('firstVisit', firstVisit);
+
+//get the date of the user's second visit
+let secondVisit = new Date();
+
+//calculate the difference between the two dates in milliseconds
+let msDifference = secondVisit.getTime() - firstVisit.getTime();
+
+//convert the difference from milliseconds to days
+let daysDifference = Math.floor(msDifference / (1000 * 60 * 60 * 24));
+
+//display the number of days between visits
+
+
+todayDisplay.textContent = daysDifference
