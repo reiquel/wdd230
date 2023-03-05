@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web  portal where where people will get to learn more about the Toursim and Education Chamber.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>The Toursim and Education Chamber Chamber of Commerce Join Page</title>
+</head>
+<body>
+    <header>
+
+        <div class="display-1">
+           <img class="logo" src="images/logo.png" alt="The Toursim and Education Chamber of Commerce">
+           <h1 class="header-title">The Tourism and Education Chamber</h1>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook image to access to facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter icon that will allow us to login to twitter"></a>
+          </div>
+        
+        <div class="northeast">
+            <button id="button-1"><span>&#9776;</span><span>X</span></button>
+        </div>
+        
+		<div class="options">
+            <nav>
+                <ul id="first-nav">
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
+                    <li><a href="#">Contact</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <div class="date-header">
+            <p id="datetime"></p>
+        </div>
+                          
+    </header>
+    <main id="directory-">
+        <h1>Business Directory</h1>
+        <div id="menu">
+            <button id="gridview" class="active"><i class="fa fa-th-large "></i></button> 
+            <button id="listview"><i class="fa fa-bars "></i></button>
+        </div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search For Business Name..">
+
+        <div class="cards"></div>
+        <div id="noBusinessFound">
+            <p>No Business Found</p>
+        </div>
+
+    </main>
+    <footer>
+        <div class="logo-footer">
+            <img class="logo-foot" src="images/logo.png" alt="Chamber of Commerce Logo image for the footer">
+                </div>
+                <div class="title-footer">
+                    <span>The Tourism and </span>
+                    <span>Education Chamber</span><br>
+                </div>
+                <div class="contact">
+                    <p>nfo@tourschamber.org</p>
+                    <p>+(425) 6791-2587</p>
+                    <a href="https://goo.gl/maps/DC1U7W2insRc2Gw79">
+                        📍 Location
+                        </a>
+                            <br><br>
+                    </div>
+                <div class="info">  
+                        <span>  &nbsp; &nbsp; &copy;<span id="©">
+                        </span>  &nbsp; The Tourism and Education Chamber of Commerce &nbsp;</span> |  &nbsp; Reiquel Carela &nbsp; |  &nbsp; WDD 230 Project &nbsp;|  &nbsp; Last modification: &nbsp;  &nbsp; <span id="dateMod"></span>
+                    
+                </div>            
+            </footer>
+            <script src="scripts/scripts1.js"></script>
+        </body>
+        </html>
