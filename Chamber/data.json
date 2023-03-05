@@ -1,65 +1,65 @@
 {
-    "companies": [
+    "businesses": [
       {
         "name": "Corripio",
         "address": "Av. Núñez de Cáceres, casi esq, Av. John F. Kennedy, Santo Domingo ",
-        "phone number": "(809) 227-3000",
+        "phone": "(809) 227-3000",
         "url": "https://www.tiendascorripio.com.do/",
         "imageurl": "../images/corripio.png"
       },
       {
         "name": "Sambil Santo Domingo",
         "address": "Corner of, P.º de los Aviadores, Santo Domingo 10413",
-        "phone number": "(809) 234-5678",
+        "phone": "(809) 234-5678",
         "url": "https://sambil.do/",
         "imageurl": "../images/sambil.png"
       },
       {
         "name": "Acropolis",
         "address": "Av. Winston Churchill 95, Santo Domingo",
-        "phone number": "(809) 955-3000",
+        "phone": "(809) 955-3000",
         "url": "https://acropoliscenter.com/",
         "imageurl": "../images/acropolis.jpg"
       },
       {
         "name": "Sebelen Bowling Center",
         "address": "Av. Abraham Lincoln Esq, Santo Domingo",
-        "phone number": "(809) 920-0202",
+        "phone": "(809) 920-0202",
         "url": "https://sebelenrd.com/",
         "imageurl": "../images/sebelen.jpg"
       },
       {
         "name": "BlueMall",
         "address": "Av. Winston Churchill 95, Santo Domingo",
-        "phone number": "(809) 955-3000",
+        "phone": "(809) 955-3000",
         "url": "https://www.bluemall.com.do/",
         "imageurl": "../images/bluemall.jpg"
       },
       {
         "name": "Downtown Center",
         "address": "Av. Núñez de Cáceres esq, Santo Domingo 10114",
-        "phone number": "(809) 482-8710",
+        "phone": "(809) 482-8710",
         "url": "https://www.downtowncenter.com.do/contacto/",
         "imageurl": "../images/Downtowncenter.jpg"
       },
       {
         "name": "Coco Bongo Punta Cana",
         "address": "Verón Esquina El Boulevard, cruce Coco Loco Bávaro, Punta Cana 23000",
-        "phone number": "(809) 466-1111",
+        "phone": "(809) 466-1111",
         "url": "https://www.cocobongo.com/show/punta-cana/?lang=es",
         "imageurl": "../images/cocobongo.jpg"
       },
       {
         "name": "Megacentro",
         "address": "Av. San Vicente de Paúl 321, Santo Domingo Este 11519",
-        "phone number": "(809) 236-7660",
+        "phone": "(809) 236-7660",
         "url": "https://megacentro.com.do/",
         "imageurl": "../images/megacentro.jpg"
       },
       {
         "name": "Amadita",
         "address": "Av. San Vicente de Paúl, Santo Domingo Este 11504",
-        "phone number": "(809) 682-5414",
+        "phone": "(809) 682-5414",
         "url": "https://amadita.com/sucursal/maria-auxiliadora/",
         "imageurl": "../images/amadita.png"
       }

@@ -462,3 +462,60 @@ th{
 #thd{
     background-color: #044353;
 }
+
+/*--------Directory Page--------*/
+.directoryPage h2.dirHeading {
+    font-family: 'Montserrat';
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #EEEE;
+    margin-bottom: 3rem;
+}
+.list-view section h2, .grid-view section h2 {
+    font-family: 'Noto Serif';
+    text-align: center;
+}
+/*--------Directory Page buttons----------*/
+.links ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.links ul li span {
+    margin: 7px;
+    font-size: 2rem;
+}
+.links ul li:hover,
+.links ul li.active {
+    color: white;
+    background-color: #14213D;
+    border-radius: 5px;
+    cursor: pointer;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+/*--------Grid View-------------*/
+.grid-view section {
+    margin: 1rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    border: #888 1px solid;
+    color: #14213D;
+}
+.grid-view section img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.grid-view section hr {
+    margin-bottom: 1.5rem;
+}
+.grid-view section p,
+.grid-view section a {
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 5px 0;
+}

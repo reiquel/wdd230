@@ -188,4 +188,10 @@
 		background-color: #0be9b9;
 		color: #121335;
 	  }
+
+	      
+
+	.grid-view {
+        grid-template-columns: 1fr 1fr;
+    }
 }
