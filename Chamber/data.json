@@ -39,14 +39,14 @@
         "name": "Downtown Center",
         "address": "Av. Núñez de Cáceres esq, Santo Domingo 10114",
         "phone": "(809) 482-8710",
-        "url": "https://www.downtowncenter.com.do/contacto/",
+        "url": "https://www.downtowncenter.com.do/",
         "imageurl": "../images/Downtowncenter.jpg"
       },
       {
         "name": "Coco Bongo Punta Cana",
         "address": "Verón Esquina El Boulevard, cruce Coco Loco Bávaro, Punta Cana 23000",
         "phone": "(809) 466-1111",
-        "url": "https://www.cocobongo.com/show/punta-cana/?lang=es",
+        "url": "https://www.cocobongo.com/",
         "imageurl": "../images/cocobongo.jpg"
       },
       {
@@ -60,7 +60,7 @@
         "name": "Amadita",
         "address": "Av. San Vicente de Paúl, Santo Domingo Este 11504",
         "phone": "(809) 682-5414",
-        "url": "https://amadita.com/sucursal/maria-auxiliadora/",
+        "url": "https://amadita.com/",
         "imageurl": "../images/amadita.png"
       }
     ]

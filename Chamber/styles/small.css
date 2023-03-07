@@ -22,7 +22,12 @@ body {
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
 }
-
+#invitation-1{
+    background-color: #064521;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 header {
 	background-color: #064521;
 	display: grid;
@@ -31,7 +36,7 @@ header {
 	justify-content: center;
 	padding: 8px;
 	color: #f4f7f5;
-    border-radius: 15px;
+    
 }
 
 header div {
@@ -503,6 +508,7 @@ li {
     border-radius: 1rem;
     border: #888 1px solid;
     color: #14213D;
+    width: 85%;
 }
 .grid-view section img{
     display: block;
@@ -515,7 +521,15 @@ li {
 }
 .grid-view section p,
 .grid-view section a {
-    font-size: 13px;
+    font-size: 10px;
     font-weight: bolder;
     padding: 5px 0;
 }
+
+.list-view section:nth-child(odd){
+    background: #0be9b9;
+   }
+   
+   .grid-view section a {
+       color: #044353;
+       }
