@@ -1,14 +1,37 @@
-//Script for Windchill in Celcius
-const temp = parseFloat(document.querySelector("#temp").textContent);
-const speed = parseFloat(document.querySelector("#speed").textContent);
-const f = 13.12 + 0.6215 * temp - 11.37 * speed ** 0.16 + 0.3965 * temp * speed ** 0.16
-if (temp <= 10 && speed > 4.8) {
-windchill= f.toFixed(1);
-}
-else {
-    windchill = "NA";
-}
-document.getElementById("windchill").innerHTML = windchill;
+const apiKey = '635f3a0057194cd58e3cf90f3df44bb7';
+
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Dominican%20Republic&appid=${apiKey}&units=imperial`;
+
+    // Fetch weather data from the API
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        const temp = data.main.temp;
+        const conditions = data.weather[0].description;
+        const icon = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+        const windSpeed = data.wind.speed;
+        const windChill = calculateWindChill(temp, windSpeed);
+
+        // Update the HTML with the weather data
+        document.getElementById('temp-5').textContent = temp;
+        document.getElementById('conditions').textContent = conditions;
+        document.getElementById('icon').src = icon;
+        document.getElementById('wind-speed').textContent = windSpeed;
+        document.getElementById('wind-chill').textContent = windChill;
+      })
+      .catch(error => console.log(error));
+
+    // Function to calculate wind chill
+    function calculateWindChill(temp, windSpeed) {
+      if (temp < 50 && windSpeed > 3) {
+        const windChill = 35.74 + 0.6215 * temp - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temp * Math.pow(windSpeed, 0.16);
+        return Math.round(windChill);
+      } else {
+        return 'N/A';
+      }
+    }
+
 
 
 
