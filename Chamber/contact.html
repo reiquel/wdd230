@@ -37,9 +37,9 @@
                 <ul id="first-nav">
                     <li> <a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li class="active"><a href="directory.html">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
-                    <li><a href="contact.html">Contact</a></li> 
+                    <li class="active"><a href="contact.html">Contact</a></li> 
                 </ul>
             </nav>
         </div>
@@ -48,21 +48,45 @@
         </div>
                           
     </header>
-    <main class="directoryPage">
-        <div class="direct-2">
-        <div class="links">
-            <h2 class="dirHeading"> Business Directory</h2>
+    <main>
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p>Please feel free to contact us with any questions or concerns you may have.</p>
+            <br>
+            <br>
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 123 Main Street, Anytown USA</p>
+            <p><strong>Phone:</strong> (555) 555-1234</p>
+            <p><strong>Email:</strong> info@chamberofcommerce.com</p>
+            <p><strong>Office Hours:</strong> Monday - Friday, 9am - 5pm</p>
+            <br>
+            <br>
+            <h2>Points of Contact</h2>
             <ul>
-                <li class="grid active" data-view="grid-view">
-                <span class="material-icons-outlined">Grid</span></li>
-
-                <li class="list" data-view="list-view">
-                <span class="material-icons-outlined">List</span></li>
+                <li><strong>President:</strong> John Doe, john@chamberofcommerce.com</li>
+                <li><strong>Vice President:</strong> Jane Smith, jane@chamberofcommerce.com</li>
+                <li><strong>Treasurer:</strong> Bob Johnson, bob@chamberofcommerce.com</li>
             </ul>
-            <span class="view-div grid-view" style="display: grid;"></span>
-            <span class="view-div list-view" style="display: none;"></span>
+        
         </div>
+        <div class="general-inquiries">
+            <fieldset>
+            <legend><h2>General Inquiries</h2></legend>
+            <form action="mailto:info@chamberofcommerce.com" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </fieldset>
         </div>
+   
     </main>
     <footer>
         <div class="logo-footer">

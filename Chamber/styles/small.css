@@ -257,7 +257,7 @@ span {
 }
 
 .join-us {
-    width: 100%;
+    width: 95%;
     margin-top: 20px;
     padding: 12px;
     background-color: #18c6f1;
@@ -502,6 +502,11 @@ li {
     text-align: -webkit-match-parent;
 }
 /*--------Grid View-------------*/
+
+.directoryPage{
+    background-color: #DEE5E5;
+    justify-content: center;}
+
 .grid-view section {
     margin: 1rem;
     padding: 2.5rem 1.5rem;
@@ -533,3 +538,69 @@ li {
    .grid-view section a {
        color: #044353;
        }
+
+       * {
+        margin: 0;
+        padding: 0;
+      }
+      
+
+      
+      /* Style contact information section */
+
+      .contact-info {
+      border-radius: 5px 5px 5px 5px;
+      box-shadow: #0be9b9;
+      border-color: #0be9b9;
+      }
+
+      .contact-info li{
+        
+        list-style: none;
+        font-size: 15px;
+      }
+      
+      
+      /* Style general inquiries form */
+      .general-inquiries {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        background-color:#EEEE;
+        font-size: 15px;
+      }
+      
+      .general-inquiries label {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .general-inquiries input, .general-inquiries textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 400px;
+      }
+      
+      .general-inquiries textarea {
+        height: 150px;
+      }
+      
+      .general-inquiries button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #008080;
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+      
+      .general-inquiries button:hover {
+        background-color: #005757;
+      }

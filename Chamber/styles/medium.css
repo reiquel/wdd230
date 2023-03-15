@@ -137,12 +137,13 @@
 	}
 
 	.join-us {
-		width: 100%;
+		width: 80%;
 		margin-top: 20px;
 		padding: 12px;
 		background-color: #18c6f1;
 		border-radius: 5px;
 		border: none;
+		font-size: 20px;
 	}
 	
 	.join-us:hover{
@@ -189,7 +190,10 @@
 		color: #121335;
 	  }
 
-	      
+	  .directoryPage{
+		background-color: #DEE5E5;
+		justify-content: center;
+	  }     
 
 	.grid-view {
         grid-template-columns: 1fr 1fr;
@@ -197,5 +201,36 @@
     }
 	.grid-view section {
 		color: #14213D;
+		
 	}
+
+	.list-view section{
+		display: flex;
+		padding: 2rem 0;
+	}
+	.list-view section h2, 
+	.list-view section p, 
+	.list-view section a {
+		padding: 0 2rem;
+	}
+	.list-view section h2 {
+		width: 15%;
+	}
+	.list-view section p {
+		width: 15%;
+	}
+	.dirHeading{
+		font-size: 30px;
+	}
+
+	.general-inquiries{
+		grid-column: 1/5;
+		text-align: center;
+	  }
+
+	  .contact-info{
+		grid-column: 1/5;
+		text-align: center;
+
+	  }
 }

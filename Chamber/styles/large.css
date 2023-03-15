@@ -220,30 +220,60 @@
           background-color: #0be9b9;
           color: #121335;
         }
-  
+
   .links{
     width: 100%;
   }
+
       .grid-view {
-          grid-template-columns: 1fr 1fr 1fr;
-          width: 100%;
+        width: fit-content;
           }
           .list-view section{
               display: flex;
               padding: 2rem 0;
+              float: right;
           }
+
+
+        .grid-view section img{
+            display: block;
+            width: 85%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .grid-view section hr {
+            margin-bottom: 1.5rem;
+        }
+        .grid-view section p,
+        .grid-view section a {
+            font-size: 10px;
+            font-weight: bolder;
+            padding: 5px 0;
+        }
           .list-view section h2, 
           .list-view section p, 
           .list-view section a {
-              padding: 0 2rem;
+              padding: 0 5rem;
           }
           .list-view section h2 {
-              width: 15%;
+              width: 80%;
           }
           .list-view section p {
-              width: 15%;
+              width: 100%;
           }
           .dirHeading{
               font-size: 30px;
+          }
+
+
+          .general-inquiries{
+            grid-column: 1/5;
+            text-align: center;
+          }
+
+          .contact-info{
+            grid-column: 1/5;
+            text-align: center;
+    
           }
     }
