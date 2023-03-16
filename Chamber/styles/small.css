@@ -269,7 +269,7 @@ span {
 #join-us:hover{
     background-color: #0be9b9;
 }
-.call-to-action {
+#call-to-action {
     position: absolute;
     bottom: 8px;
     right: 0px;
@@ -283,7 +283,7 @@ span {
     font-size: 22px;
 }
 
-.call-to-action:hover {
+#call-to-action:hover {
     background-color: #0be9b9;
 }
 
