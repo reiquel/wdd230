@@ -527,6 +527,7 @@ li {
 .grid-view section hr {
     margin-bottom: 1.5rem;
 }
+.list-view section h2,
 .grid-view section p,
 .grid-view section a {
     font-size: 10px;

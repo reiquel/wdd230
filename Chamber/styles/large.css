@@ -226,18 +226,23 @@ font-size: 22px;
           background-color: #0be9b9;
           color: #121335;
         }
-
+.dirHeading{
+    text-align: center;
+}
   .links{
-    width: 100%;
+    margin-left: 185px;
   }
-
+ .direct-2{
+    justify-content: center;
+ }
       .grid-view {
-        width: fit-content;
+        grid-template-columns: 1fr 1fr 1fr;
           }
           .list-view section{
               display: flex;
               padding: 2rem 0;
-              float: right;
+            
+              align-self: center;
           }
 
 
@@ -259,10 +264,11 @@ font-size: 22px;
           .list-view section h2, 
           .list-view section p, 
           .list-view section a {
-              padding: 0 5rem;
+              padding: 0 2rem;
+              font-size: 15px;
           }
           .list-view section h2 {
-              width: 80%;
+              width: 60%;
           }
           .list-view section p {
               width: 100%;

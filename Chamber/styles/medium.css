@@ -190,7 +190,9 @@
 		background-color: #0be9b9;
 		color: #121335;
 	  }
-
+      .links{
+		margin-left: 180px;
+	  }
 	  .directoryPage{
 		background-color: #DEE5E5;
 		justify-content: center;
@@ -198,7 +200,7 @@
 
 	.grid-view {
         grid-template-columns: 1fr 1fr;
-		width: 100%;
+		width: 65%;
     }
 	.grid-view section {
 		color: #14213D;
@@ -207,12 +209,13 @@
 
 	.list-view section{
 		display: flex;
-		padding: 2rem 0;
+		padding: 0 0;
 	}
 	.list-view section h2, 
 	.list-view section p, 
 	.list-view section a {
-		padding: 0 2rem;
+		padding: 0;
+		font-size: 13px;
 	}
 	.list-view section h2 {
 		width: 15%;
@@ -221,7 +224,7 @@
 		width: 15%;
 	}
 	.dirHeading{
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	.general-inquiries{
