@@ -13,7 +13,7 @@
 }
 body {
 	font-size: 16px;
-    color: #044353;
+    color: #023744;
     background-color: #044353;
     margin: 0;
 	padding: 0;
@@ -256,16 +256,17 @@ span {
     min-height: 100%;
 }
 
-.join-us {
+#join-us {
     width: 95%;
     margin-top: 20px;
     padding: 12px;
     background-color: #18c6f1;
     border-radius: 5px;
     border: none;
+    color: black;
 }
 
-.join-us:hover{
+#join-us:hover{
     background-color: #0be9b9;
 }
 .call-to-action {
@@ -278,6 +279,8 @@ span {
     background-color: #18c6f1;
     box-shadow: 0 10px 30px #121335;
     border: none;
+    color: black;
+    font-size: 22px;
 }
 
 .call-to-action:hover {
@@ -499,7 +502,7 @@ th{
 }
 li {
     display: list-item;
-    text-align: -webkit-match-parent;
+
 }
 /*--------Grid View-------------*/
 

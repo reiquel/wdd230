@@ -93,6 +93,12 @@
     .joinbutton {
     grid-column: 1/2;
     grid-row: 3/3;
+    
+  }
+  #join-us{
+align-items: center;
+font-size: 22px;
+    
   }
     .hero {
         grid-column: 2/4;
