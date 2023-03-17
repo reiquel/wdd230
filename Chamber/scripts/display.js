@@ -38,5 +38,5 @@ function getRandomInt(max) {
   
   getRandomCompanies();
   
-  displayCompanies();
+
   
