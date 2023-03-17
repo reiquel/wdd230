@@ -116,7 +116,10 @@ header div button, a {
 a {
     text-decoration: none;
 }
-
+#a-1{
+    color: #023744;
+    font-size: 8px;
+}
 header div a {
     margin: 1.5rem;
 }
