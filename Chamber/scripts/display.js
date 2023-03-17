@@ -1,33 +1,51 @@
-document.addEventListener("DOMContentLoaded", function () {
-    fetch("data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        displayRandomCompany(data.businesses);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+async function fetchData() {
+    const response = await fetch('data.json');
+    const data = await response.json();
+    return data;
+  }
   
-    function displayRandomCompany(companies) {
-      const randomCompany = companies[Math.floor(Math.random() * companies.length)];
+  function generateRandomIndex(max) {
+    return Math.floor(Math.random() * max);
+  }
   
-      const spotlight1 = document.querySelector(".spotlight1");
-      const spotlight2 = document.querySelector(".spotlight2");
-      const spotlight3 = document.querySelector(".spotlight3");
+  function displayCompanyInformation(company, spotlight) {
+    const companyName = document.createElement('h3');
+    const companyAddress = document.createElement('p');
+    const companyPhone = document.createElement('p');
+    const companyUrl = document.createElement('a');
+    const companyImage = document.createElement('img');
   
-      const companyTemplate = (company) => {
-        return `
-          <div class="company">
-            <h2>${company.name}</h2>
-            <p>${company.address}</p>
-            <p>${company.phone}</p>
-            <p><a href="${company.url}">${company.url}</a></p>
-            <img src="${company.imageurl}" alt="${company.name}">
-          </div>
-        `;
-      };
+    companyName.textContent = company.name;
+    companyAddress.textContent = company.address;
+    companyPhone.textContent = company.phone;
+    companyUrl.href = company.url;
+    companyUrl.textContent = company.url;
+    companyImage.src = company.imageurl;
+    companyImage.alt = `${company.name} logo`;
   
-      spotlight1.innerHTML = companyTemplate(randomCompany);
-      spotlight2.innerHTML = companyTemplate(randomCompany);
-      spotlight3.innerHTML = companyTemplate(randomCompany);
+    spotlight.appendChild(companyName);
+    spotlight.appendChild(companyAddress);
+    spotlight.appendChild(companyPhone);
+    spotlight.appendChild(companyUrl);
+    spotlight.appendChild(companyImage);
+  }
+  
+  async function displayRandomCompany() {
+    const data = await fetchData();
+    const businesses = data.businesses;
+    const randomIndex = generateRandomIndex(businesses.length);
+  
+    const spotlights = [
+      document.querySelector('.spotlight1'),
+      document.querySelector('.spotlight2'),
+      document.querySelector('.spotlight3')
+    ];
+  
+    for (let i = 0; i < spotlights.length; i++) {
+      const randomCompany = businesses.splice(randomIndex, 1)[0];
+      displayCompanyInformation(randomCompany, spotlights[i]);
     }
-  });
+  }
+  
+  document.addEventListener('DOMContentLoaded', displayRandomCompany);
   
