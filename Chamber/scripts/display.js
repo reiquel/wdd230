@@ -1,4 +1,8 @@
- 
+const getRandomCompany = (businesses) => {
+    const randomIndex = Math.floor(Math.random() * businesses.length);
+    return businesses[randomIndex];
+  };
+  
      const displayCompanyInfo = (company) => {
         const spotlights = ['spotlight1', 'spotlight2', 'spotlight3'];
       
