@@ -1,39 +1,43 @@
-// Fetch JSON data
+// randomCompany.js
+
 async function fetchCompanies() {
-    const response = await fetch("data.json");
-    const data = await response.json();
-    return data.businesses;
-  }
-  
-  // Get a random company
-  function getRandomCompany(companies) {
+    try {
+        const response = await fetch("data.json");
+        if (!response.ok) {
+            throw new Error("Failed to fetch companies data");
+        }
+        const data = await response.json();
+        return data.businesses;
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+
+function getRandomCompany(companies) {
     const randomIndex = Math.floor(Math.random() * companies.length);
     return companies[randomIndex];
-  }
-  
-  // Display company information in the divs
-  function displayCompany(company) {
+}
+
+function displayCompany(company, spotlightElement) {
+    const nameElement = spotlightElement.querySelector("b");
+    const addressElement = spotlightElement.querySelector("p");
+
+    nameElement.textContent = company.name;
+    addressElement.textContent = company.address;
+}
+
+async function displayRandomCompanies() {
+    const companies = await fetchCompanies();
+
     const spotlight1 = document.querySelector(".spotlight1");
     const spotlight2 = document.querySelector(".spotlight2");
     const spotlight3 = document.querySelector(".spotlight3");
-  
-    spotlight1.querySelector("b").innerText = company.name;
-    spotlight1.querySelector("p").innerText = company.address;
-  
-    spotlight2.querySelector("b").innerText = company.phone;
-    spotlight2.querySelector("p").innerText = company.url;
-  
-    spotlight3.querySelector("b").innerText = "Visit Website";
-    spotlight3.querySelector("p").innerHTML = `<a href="${company.url}" target="_blank">${company.url}</a>`;
-  }
-  
-  // Main function
-  async function main() {
-    const companies = await fetchCompanies();
-    const randomCompany = getRandomCompany(companies);
-    displayCompany(randomCompany);
-  }
-  
-  // Call the main function
-  main();
+
+    displayCompany(getRandomCompany(companies), spotlight1);
+    displayCompany(getRandomCompany(companies), spotlight2);
+    displayCompany(getRandomCompany(companies), spotlight3);
+}
+
+document.addEventListener("DOMContentLoaded", displayRandomCompanies);
+
   
