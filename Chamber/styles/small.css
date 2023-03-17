@@ -222,10 +222,30 @@ main div {
     display: none;
 }
 
-.spotlight3 {
+.spotlight3,h3, p, img {
     display: none;
+    color: #023744;
+    font-size: 13px;
+    justify-content: center;
 }
 
+.spotlight3,img {
+width: 35%;
+}
+.spotlight2,h3, p, img {
+    color: #023744;
+    font-size: 13px;
+}
+.spotlight2,img {
+    width: 35%;
+    }
+.spotlight1,h3, p, img {
+    color: #023744;
+    font-size: 13px;
+}
+.spotlight1,img {
+    width: 35%;
+    }
 footer p {
     display: flex;
     flex-direction: column;
