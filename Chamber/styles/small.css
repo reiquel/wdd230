@@ -222,7 +222,7 @@ main div {
     display: none;
 }
 
-.spotlight3,h3, p, img {
+.spotlight3,h3, p, img.a {
     display: none;
     color: #023744;
     font-size: 13px;
@@ -232,14 +232,14 @@ main div {
 .spotlight3,img {
 width: 35%;
 }
-.spotlight2,h3, p, img {
+.spotlight2,h3, p, img,a {
     color: #023744;
     font-size: 13px;
 }
 .spotlight2,img {
     width: 35%;
     }
-.spotlight1,h3, p, img {
+.spotlight1,h3, p, img,a {
     color: #023744;
     font-size: 13px;
 }
