@@ -222,15 +222,42 @@ main div {
     display: none;
 }
 
-.spotlight3 {
+.spotlight3 a{
     display: none;
     
 }
-.spotlight2 {
-    
+
+.spotlight3 a,.spotlight2 p{
+    font-size: 13px;
+    color: #023744;
 }
-.spotlight1 {
-    
+
+.spotlight3 img {
+    width: 20px;
+    height: 20px;
+}
+
+.spotlight2 a, .spotlight2 p{
+    font-size: 13px;
+    color: #023744;
+}
+
+.spotlight2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.spotlight1 img {
+    width: 20px;
+    height: 20px;
+}
+
+.spotlight1 a, .spotlight2 p{
+    font-size: 13px;
+    color: #023744;
+}
+.spotlight1 a{
+    font-size: 13px;
 }
 footer p {
     display: flex;
