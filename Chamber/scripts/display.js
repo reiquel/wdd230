@@ -1,47 +1,39 @@
-// JSON object with the businesses
-const companiesJSON = 'data.json';
-
-// Parse the JSON object
-const companiesObj = JSON.parse(companiesJSON);
-
-// Function to get a random company
-function getRandomCompany() {
-    const companies = companiesObj.businesses;
+// Fetch JSON data
+async function fetchCompanies() {
+    const response = await fetch("data.json");
+    const data = await response.json();
+    return data.businesses;
+  }
+  
+  // Get a random company
+  function getRandomCompany(companies) {
     const randomIndex = Math.floor(Math.random() * companies.length);
     return companies[randomIndex];
-}
-
-// Function to display the company information
-function displayCompany() {
-    const company = getRandomCompany();
+  }
+  
+  // Display company information in the divs
+  function displayCompany(company) {
+    const spotlight1 = document.querySelector(".spotlight1");
+    const spotlight2 = document.querySelector(".spotlight2");
     const spotlight3 = document.querySelector(".spotlight3");
-
-    // Create elements to display company information
-    const companyName = document.createElement("h3");
-    companyName.textContent = company.name;
-
-    const companyAddress = document.createElement("p");
-    companyAddress.textContent = company.address;
-
-    const companyPhone = document.createElement("p");
-    companyPhone.textContent = company.phone;
-
-    const companyURL = document.createElement("a");
-    companyURL.href = company.url;
-    companyURL.textContent = "Visit website";
-    companyURL.target = "_blank";
-
-    const companyImage = document.createElement("img");
-    companyImage.src = company.imageurl;
-    companyImage.alt = company.name;
-
-    // Append elements to the spotlight3 div
-    spotlight3.appendChild(companyName);
-    spotlight3.appendChild(companyAddress);
-    spotlight3.appendChild(companyPhone);
-    spotlight3.appendChild(companyURL);
-    spotlight3.appendChild(companyImage);
-}
-
-// Call the displayCompany function when the DOM is loaded
-document.addEventListener("DOMContentLoaded", displayCompany);
+  
+    spotlight1.querySelector("b").innerText = company.name;
+    spotlight1.querySelector("p").innerText = company.address;
+  
+    spotlight2.querySelector("b").innerText = company.phone;
+    spotlight2.querySelector("p").innerText = company.url;
+  
+    spotlight3.querySelector("b").innerText = "Visit Website";
+    spotlight3.querySelector("p").innerHTML = `<a href="${company.url}" target="_blank">${company.url}</a>`;
+  }
+  
+  // Main function
+  async function main() {
+    const companies = await fetchCompanies();
+    const randomCompany = getRandomCompany(companies);
+    displayCompany(randomCompany);
+  }
+  
+  // Call the main function
+  main();
+  
