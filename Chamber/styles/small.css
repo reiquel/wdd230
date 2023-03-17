@@ -222,29 +222,38 @@ main div {
     display: none;
 }
 
-.spotlight3,h3, p, img.a {
+.spotlight3,h3, p, img,a {
     display: none;
     color: #023744;
     font-size: 13px;
     justify-content: center;
 }
-
-.spotlight3,img {
+.spotlight3 a {
+    color: #023744; 
+}
+.spotlight3 img {
 width: 35%;
 }
 .spotlight2,h3, p, img,a {
     color: #023744;
     font-size: 13px;
 }
-.spotlight2,img {
+.spotlight2 img {
     width: 35%;
+    }
+.spotlight2 a {
+        color: #023744; 
     }
 .spotlight1,h3, p, img,a {
     color: #023744;
     font-size: 13px;
 }
-.spotlight1,img {
+.spotlight1 img {
     width: 35%;
+    }
+
+    .spotlight1  a {
+        color: #023744; 
     }
 footer p {
     display: flex;
