@@ -54,7 +54,14 @@
 		grid-column: 1/4;
 		grid-row: 1/2;
 	}
-
+	.hero picture {
+        width: 100%;
+        height: 100%;
+        margin-bottom: -15px;
+        margin-left: 0;
+        margin-right: 0;
+        background-size: cover;
+      }
 	.news {
 		grid-column: 1/4;
 		grid-row: 3/4;
