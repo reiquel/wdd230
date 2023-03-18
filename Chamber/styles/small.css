@@ -115,8 +115,7 @@ header div button, a {
 
 a {
     text-decoration: none;
-    color: #023744;
-    font-size: 15px;
+ 
 }
 
 header div a {
@@ -230,36 +229,36 @@ main div {
 }
 
 .spotlight3 a,.spotlight2 p{
-    font-size: 13px;
+    font-size: 15px;
     color: #023744;
 }
 
 .spotlight3 img {
-    width: 18px;
-    height: 18px;
+    width:max-content;
+    height: max-content;
 }
 
 .spotlight2 a, .spotlight2 p{
-    font-size: 13px;
+    font-size: 15px;
     color: #023744;
 }
 
 .spotlight2 img {
-    width: 18px;
-    height: 18px;
+    width:max-content;
+    height: max-content;
 }
 
 .spotlight1 img {
-    width: 18px;
-    height: 18px;
+    width:max-content;
+    height: max-content;
 }
 
 .spotlight1 a, .spotlight2 p{
-    font-size: 13px;
+    font-size: 15px;
     color: #023744;
 }
 .spotlight1 a{
-    font-size: 13px;
+    font-size: 15px;
 }
 footer p {
     display: flex;
