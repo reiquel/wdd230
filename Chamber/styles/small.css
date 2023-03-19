@@ -312,7 +312,7 @@ span {
     border-radius: 5px;
     border: none;
     color: black;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 #join-us:hover{
@@ -413,18 +413,6 @@ picture.optipic {
     height: auto;
 }
 
-.localstorage {
-    width: 100%;
-    margin-top: 10px;
-    padding: 5px;
-    background-color: #18c6f1;
-    border-radius: 5px;
-    border: black;
-}
-
-.localstorage:hover{
-    background-color: #1ff18f;
-}
 
 
 .mygallery {
