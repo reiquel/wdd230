@@ -5,14 +5,14 @@
         "address": "Av. Núñez de Cáceres, casi esq, Av. John F. Kennedy, Santo Domingo ",
         "phone": "(809) 227-3000",
         "url": "https://www.tiendascorripio.com.do/",
-        "imageurl": "../images/corripio.png"
+        "imageurl": "../images/corripio.jpg"
       },
       {
         "name": "Sambil Santo Domingo",
         "address": "Corner of, P.º de los Aviadores, Santo Domingo 10413",
         "phone": "(809) 234-5678",
         "url": "https://sambil.do/",
-        "imageurl": "../images/sambil.png"
+        "imageurl": "../images/sambil.jpg"
       },
       {
         "name": "Acropolis",
@@ -40,7 +40,7 @@
         "address": "Av. Núñez de Cáceres esq, Santo Domingo 10114",
         "phone": "(809) 482-8710",
         "url": "https://www.downtowncenter.com.do/",
-        "imageurl": "../images/Downtowncenter.jpg"
+        "imageurl": "../images/downtown.jpg"
       },
       {
         "name": "Coco Bongo Punta Cana",
