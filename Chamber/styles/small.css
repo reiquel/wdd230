@@ -307,11 +307,12 @@ span {
 #join-us {
     width: 95%;
     margin-top: 20px;
-    padding: 12px;
+    padding: 8px;
     background-color: #18c6f1;
     border-radius: 5px;
     border: none;
     color: black;
+    font-size: 15px;
 }
 
 #join-us:hover{
@@ -328,7 +329,7 @@ span {
     box-shadow: 0 10px 30px #121335;
     border: none;
     color: black;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 #call-to-action:hover {

@@ -145,6 +145,10 @@ font-size: 22px;
       justify-content: center;
   }
   
+  #join-us {
+	
+    font-size: 18px;
+}
   
   .lazyloading {
       grid-column: 4/5;

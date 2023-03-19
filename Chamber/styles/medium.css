@@ -72,7 +72,10 @@
 		grid-row: 4/5;
 	}
 	
-
+	#join-us {
+	
+		font-size: 18px;
+	}
 	.join {
 		grid-column: 1/4;
 		grid-row: 5/6;
