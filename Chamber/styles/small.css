@@ -234,8 +234,8 @@ main div {
 }
 
 .spotlight3 img {
-    width:50%;
-    height: 50%;
+    width: 60px;
+    height: 90px;
 }
 
 .spotlight2 a, .spotlight2 p{
@@ -244,13 +244,13 @@ main div {
 }
 
 .spotlight2 img {
-    width:50%;
-    height: 50%;
+    width: 60px;
+    height: 90px;
 }
 
 .spotlight1 img {
-    width:50%;
-    height: 50%;
+    width: 60px;
+    height: 90px;
 }
 
 .spotlight1 a, .spotlight2 p{
