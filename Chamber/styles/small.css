@@ -270,7 +270,10 @@ footer p {
     flex-direction: column;
     text-align: center;
 }
-
+#phone-3{
+    color: 023744;
+    font-size: 15px;
+}
 
 .date-header {
     text-align: center;
