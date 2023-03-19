@@ -271,7 +271,7 @@ footer p {
     text-align: center;
 }
 #phone-3{
-    color: 023744;
+    color: #023744;
     font-size: 15px;
 }
 
@@ -288,7 +288,7 @@ span {
 }
 
 .hero {
-    grid-column: 1fr;
+    grid-column:1;
     position: relative;
     padding: 0; 
     border: 0;
@@ -594,7 +594,6 @@ li {
 
       .contact-info {
       border-radius: 5px 5px 5px 5px;
-      box-shadow: #0be9b9;
       border-color: #0be9b9;
       }
 
