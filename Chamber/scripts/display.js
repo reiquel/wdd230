@@ -14,7 +14,7 @@ function getRandomInt(max) {
       <h3>${company.name}</h3>
       <p>${company.address}</p>
       <p>${company.phone}</p>
-      <p><a>${company.url}</a></p>
+      <a>${company.url}</a>
       <img src="${company.imageurl}" alt="${company.name}" />
     `;
   }
